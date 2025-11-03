@@ -1,0 +1,835 @@
+.svarigais {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 208px 1fr 1fr 312px;
+  gap: 20px;
+}
+
+.navigacija {
+  grid-column: 1/6;
+  grid-rows: 1/2;
+  background-color: white;
+  display: flex;
+  padding: 24px 16px 24px 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height:42px;
+}
+
+.navigacija_izvele {
+  display: flex;
+  align-items: center;
+}
+
+.poga {
+  width: 40px;
+  height: 40px;
+  margin: 0px 12px 0px 0px;
+  color: transparent; 
+  background-color: transparent; 
+  border-color: transparent; 
+  cursor: default;
+}
+
+.poga img {
+  width:16px;
+  height:20px;
+  cursor:pointer;
+}
+
+.Sky {
+  color: rgb(59, 130, 246);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.mapbilde {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  margin: 0px 0px 0px 56px;
+}
+
+.pilsetatxt {
+  font-size: 100%;
+  margin: 0px 0px 0px 4px
+  color: rgb(31, 41, 55);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin:0px 0px 0px 4px;
+}
+
+.search {
+  height: 20px;
+  width: 159px;
+  border: transparent;
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.pog {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 8px 12px 8px 12px;
+  border: transparent;
+  width: 88px;
+  margin-left: 16px;
+  line-height: 24px;
+  background-color: rgb(209, 213, 219);
+  border-radius: 6px;
+}
+
+
+.navigacija_iestatijumi {
+  background-color: #white;
+  display: flex;
+}
+
+.zvanins img {
+  height: 28px;
+  width: 28px;
+  padding: 8px;
+  cursor:pointer;
+}
+
+.zobrats img {
+  height: 28px;
+  width: 28px;
+  padding: 8px;
+  margin: 0px 0px 0px 16px;
+  cursor:pointer;
+}
+
+body {
+  background-color: rgb(243, 244, 246);
+  margin:0px;
+  padding:0px 24px;
+  transition:0s;
+}
+body.dark-mode {
+    background-color: rgb(31, 41, 55);
+    color: black;
+} 
+
+.dark-mode .container,
+.dark-mode .raintxt,
+.dark-mode .raintxt1,
+.dark-mode .button1,
+.dark-mode .sidebloks,
+.dark-mode .bigkaste,
+.dark-mode .kaste1,
+.dark-mode .kaste2,
+.dark-mode .kaste3,
+.dark-mode .kaste4,
+.dark-mode .kaste5,
+.dark-mode .kaste6,
+.dark-mode .bloks,
+.dark-mode .navigacija,
+.dark-mode .navigacija_izvele,
+.dark-mode .navigacija_meklesana{
+
+  background-color: rgb(75, 85, 99);
+  color: white;
+}
+
+.bloks {
+  grid-column: 1/4;
+  grid-rows: 2/3;
+  background-color: white;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+  margin-top:24px;
+}
+.bloks_stils {
+  display: flex;
+  align-items: center;
+ max-width:100%;
+}
+
+.bloks_stils1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloks_stils3 {
+  display: flex;
+  justify-content: space-between;
+  padding:48px 0px 0px;
+}
+
+.laikapstaklitxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:14px;
+  height:20px;
+  max-width:100%;
+  text-align: left;
+}
+
+.laikstxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:18px;
+  height:28px;
+  text-align: left;
+}
+
+.makonis {
+  display: flex;
+  height: 48px;
+  width: 48px;
+}
+
+.txt8 {
+  font-weight: bold;
+  padding: 0px 0px 0px 12px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:48px;
+}
+
+.celsijs {
+  margin:0px 0px 8px;
+  padding:0px 8px 0px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:24px;
+  font-weight: bold;
+}
+
+.double {
+  padding: 0px 0px 0px 24px;
+}
+
+.overcast {
+  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.liekas {
+  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+
+.gradi {
+  align-items:center;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  border-bottom-style:solid;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  font-size:13,3px;
+}
+
+.Direction {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:16px;
+  height:20px;
+  max-width:100%;
+  text-align: left;
+  margin: 16px 0px 0px;
+}
+
+.kaste1 {
+  grid-column: 1/2;
+  grid-rows: 3/4;
+  background-color: white;
+  display: grid;
+  padding: 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:56px;
+  margin:0px;
+}
+
+.makonis1 {
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.kvalitatetxt {
+  margin: 0px 0px 0px 8px;
+  font-size:16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.txt1 {
+  margin: 0px 0px 0px 32px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:24px;
+  font-weight: bold;
+  height:32px;
+}
+
+.kaste2 {
+  grid-column: 2/3;
+  grid-rows: 3/4;
+  background-color: white;
+  display: grid;
+  padding: 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:56px;
+}
+
+.kaste3 {
+  grid-column: 3/4;
+  grid-rows: 3/4;
+  background-color: white;
+  display: grid;
+  padding: 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:56px;
+}
+
+.kaste4 {
+  grid-column: 1/2;
+  grid-rows: 4/5;
+  background-color: white;
+  display: grid;
+  padding: 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:56px;
+}
+
+.kaste5 {
+  grid-column: 2/3;
+  grid-rows: 4/5;
+  background-color: white;
+  display: grid;
+  padding: 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:56px;
+}
+
+.kaste6 {
+  grid-column: 3/4;
+  grid-rows: 4/5;
+  background-color: white;
+  display: grid;
+  padding: 16px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:56px;
+}
+
+.bigkaste {
+  grid-column: 1/4;
+  grid-rows: 5/6;
+  background-color: white;
+  padding: 24px 24px 56px;
+  justify-content: space-between;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 12px;
+
+  height:232px;
+}
+
+.saulemenes {
+  margin: 0px 0px 16px;
+  display:flex;
+  height:24px;
+  width:1033px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.makonis2 {
+  display: flex;
+  height: 48px;
+  width: 48px;
+}
+
+.gaisatxt {
+  padding: 0px 0px 0px 20px;
+  display:flex;
+  flex-direction: column;
+}
+.gaisatxt1 {
+  height:20px;
+  width:66px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:14px;
+}
+
+.txt2 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:20px;
+}
+
+.sunrise {
+  display:flex;
+  font-size:24px;
+  width:24px;
+  height:24px;
+  margin: 0px 0px 4px;
+}
+
+.sunrise img {
+  width:24px;
+}
+
+.bloksstils2 {
+  display: flex;
+  align-items: center;
+}
+
+.sunset {
+  display:flex;
+  font-size:24px;
+  width:24px;
+  height:24px;
+  margin: 0px 0px 4px;
+} 
+
+.sunset img {
+  width:24px;
+}
+
+.sunsetxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width:100%;
+  font-size:14px;
+}
+
+.gaisatxt2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:100%;
+}
+
+.sunrisetxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width:100%;
+  font-size:14px;
+}
+
+.laiksizvade {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  max-width:100%;
+}
+
+.gauge-container {
+  margin: 0px 0px 0px 16px;
+}
+
+.gauge {
+  width: 192px;
+  height: 56px;
+}
+
+.gauge-bg {
+  fill: none;
+  stroke: #ddd; 
+  stroke-width: 8;
+}
+
+.gauge-fill {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  width:89,6px;
+  height:44,8px;
+}
+
+.orange {
+  stroke: orange;
+}
+
+.blue {
+  stroke: #0099FF;
+}
+
+.moonrisetxt {
+  font-size:16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+}
+
+.sidebloks {
+  height:696px;
+  grid-column: 4/6;
+  grid-row: 2/6;
+  background-color: white;
+  padding: 24px;
+  box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  border-radius: 10px;
+  overflow: scroll;
+  overflow-x:hidden;
+  margin-top:24px;
+}
+.dienaspogas {
+  margin: 0px 0px 16px;
+  display:flex;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height:30px;
+  max-width:100%;
+  justify-content: space-between;
+}
+
+.dienasname {
+  display: flex;
+    align-items: center;
+   max-width:100%;
+}
+
+.button1 {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.button1:hover {
+  cursor: pointer;
+}
+
+.button1:focus {
+  text-decoration:undeline;
+  font-wight:bold;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.125rem;
+}
+
+.div {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  padding:8px 0px;
+  border-bottom: 2px solid #ddd;
+  height:46px;
+}
+
+.days1 {
+  display: flex;
+  max-width:100%;
+}
+
+.rain img {
+  width:48px;
+  height:48px;
+}
+
+.blakusrain {
+  display: flex;
+  flex-direction: column;
+  max-width:100%;
+  margin:0px 0px 0px 8px;
+  height:44px;
+  width:192px;
+}
+
+.raintxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:14px;
+  color:#374151;
+  font-weight: bold;
+}
+
+.raintxt1 {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:16px;
+  font-weight: bold;
+  color:#374151;
+}
+
+.linija {
+  width:0px;
+  height:48px;
+  margin:0px 8px;
+  border-left: 2px solid #ddd;
+}
+
+.gradiside {
+  align-items:center;
+  display: flex;
+  max-width:100%;
+  height:40px;
+}
+
+.gradiside1 {
+  display: flex;
+  max-width:100%;
+}
+
+.gradisidetxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:24px;
+}
+
+.graditxt {
+  font-size:20px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin:0px 0px 8px;
+  padding:0px 8px 0px 0px;
+}
+
+.blakusgradi {
+  margin:0px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  max-width:100%;
+  align-items:center;
+}
+
+.windtxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  font-size:14px;
+}
+
+.humiditytxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  font-size:14px;
+}
+
+.blakuswindtxt {
+  display: flex;
+  flex-direction: column;
+  max-width:100%;
+  margin:0px 0px 0px 8px;
+}
+
+select {
+padding: 8px;
+font-size: 16px;
+border-radius: 8px;
+cursor:pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px;
+  height:30px;
+  width:340px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  background: white;
+  width:100%;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-box img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  align-items:center;
+
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  background: rgb(209, 213, 219);
+  color: black;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 0px 0px 0px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  height:24px;
+  width:90px;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+.theme-toggle img {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.globus img {
+  width: 24px;
+  height: 24px;
+}
+
+.globus {
+  width:24px;
+  height:24px;
+}
+
+.navigacija_meklesana {
+  text-align:center;
+}
+
+.lighttxt {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin:0px 0px 0px 8px;
+  font-size:16px;
+  font-weight: normal;
+  color:black;
+}
+body[data-unit="metric"] .temperature::after {
+  content: "°C";
+}
+
+body[data-unit="imperial"] .temperature::after {
+  content: "°F";
+}
+
+body[data-unit="metric"] .distance::after {
+  content: " km";
+}
+
+body[data-unit="imperial"] .distance::after {
+  content: " miles";
+}
+.button-pressed {
+  color: rgb(31, 41, 55);
+  border-bottom: 3px solid rgb(31, 41, 55);
+}
+.button-pressed {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgb(31, 41, 55);
+}
+
+@media (max-width: 862px) {
+  .svarigais{
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 400px 200px 1fr;
+    height: unset;
+  }
+  .pilsetatxt{
+    padding: 0;
+    margin: 0;
+    width:0px;
+    height: 0px;    
+    font-size: 0px;
+  }
+  .zobrats{
+    padding: 0;
+    margin: 0;
+    width:0px;
+    height: 0px;    
+    font-size: 0px;
+    display: none;
+  }
+  .lightpoga{
+    padding: 0;
+    margin: 0;
+    width:0px;
+    height: 0px;    
+    font-size: 0px;
+    display: none;
+  }
+  .zvanins{
+    padding: 0;
+    margin: 0;
+    width:0px;
+    height: 0px;    
+    font-size: 0px;
+    display: none;
+  }
+  .globus{
+    padding: 0;
+    margin: 0;
+    width:0px;
+    height: 0px;    
+    font-size: 0px;
+    display: none;
+  }
+  .navigacija{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .bigkaste{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .laiks{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .kaste1{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .kaste2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .kaste3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .kaste4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .kaste5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .kaste6{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .saulemenes{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+}
